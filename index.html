@@ -5,7 +5,7 @@
 	<head>
 	<body>
 		<script type="text/javascript">
-			$.getScript( window.location.hostname + "/lobby", function( data, textStatus, jqxhr ) {
+			$.getScript( "//" + window.location.hostname + "/lobby", function( data, textStatus, jqxhr ) {
 				console.log( data ); // Data returned
 				console.log( textStatus ); // Success
 				console.log( jqxhr.status ); // 200
