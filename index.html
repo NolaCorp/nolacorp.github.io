@@ -6,9 +6,10 @@
 	<body>
 		<ul id="processor"></ul>
 		<script type="text/javascript">
-			var handler = function ()
+			var handler = function (response, status, xhr)
 			{
 				alert('loading lobby');
+				alert(response);
 			};
 			
 			$("#processor").load("lobby", handler);
