@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="/resources/jquery></script>
+	<head>
+	<body>
+		<script type="text/javascript">
+			$.getScript( "/lobby", function( data, textStatus, jqxhr ) {
+				console.log( data ); // Data returned
+				console.log( textStatus ); // Success
+				console.log( jqxhr.status ); // 200
+				console.log( "Load was performed." );
+			});
+		</script>
+	</body>
+</html>
