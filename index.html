@@ -6,7 +6,8 @@
 	</head>
 	<body>
 		<script type="text/javascript">
-			$(function () { alert(lobby)});
+			if (typeof lobby !== 'undefined')
+				console.log(lobby);
 		</script>
 	</body>
 </html>
