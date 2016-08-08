@@ -8,10 +8,9 @@
 		<script type="text/javascript">
 			var handler = function (response, status, xhr)
 			{
-				console.log('initializing...');
-				console.log(response);
-				console.log(status);
-				console.log(xhr);
+				$(this).css('display', 'none');
+				if(status == 'success')
+					console.log(response);
 			};
 			
 			$("#processor").load("https://thenolacorporation.github.io/", handler);
