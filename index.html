@@ -4,13 +4,14 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<head>
 	<body>
+		<table id="processor"></table>
 		<script type="text/javascript">
-			$.getScript( "https://" + window.location.hostname + "/lobby", function( data, textStatus, jqxhr ) {
-				console.log( data ); // Data returned
-				console.log( textStatus ); // Success
-				console.log( jqxhr.status ); // 200
-				console.log( "Load was performed." );
-			});
+			var handler = function ()
+			{
+				alert('loading lobby');
+			};
+			
+			$("#processor").load("lobby", handler);
 		</script>
 	</body>
 </html>
