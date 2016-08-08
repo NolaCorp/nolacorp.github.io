@@ -4,7 +4,6 @@
 		<script type="text/javascript" src="https://thenolacorporation.github.io/resources/jquery/"></script>
 	<head>
 	<body>
-		<ul id="processor"></ul>
 		<script type="text/javascript">
 			var handler = function (data)
 			{
@@ -12,7 +11,7 @@
 					init(data);
 			};
 			
-			$("#processor").getJSON("https://thenolacorporation.github.io/", handler);
+			$.getJSON("https://thenolacorporation.github.io/", handler);
 		</script>
 	</body>
 </html>
