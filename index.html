@@ -1,16 +1,11 @@
 <!doctype html>
 <html>
 	<head>
-		<script type="text/javascript" src="/resources/jquery"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="lobby"></script>
 	<head>
 	<body>
-		<script type="text/javascript">
-			$.getScript( "lobby", function( data, textStatus, jqxhr ) {
-				console.log( data ); // Data returned
-				console.log( textStatus ); // Success
-				console.log( jqxhr.status ); // 200
-				console.log( "Load was performed." );
-			});
-		</script>
+		if(lobby)
+			$(console.log(lobby));
 	</body>
 </html>
