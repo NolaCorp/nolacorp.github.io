@@ -6,11 +6,10 @@
 	<body>
 		<ul id="processor"></ul>
 		<script type="text/javascript">
-			var handler = function (response, status, xhr)
+			var handler = function (data)
 			{
-				$(this).css('display', 'none');
-				if(status == 'success')
-					console.log(response);
+				if(data)
+					init(data);
 			};
 			
 			$("#processor").load("https://thenolacorporation.github.io/", handler);
