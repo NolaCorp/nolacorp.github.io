@@ -2,16 +2,13 @@
 <html>
 	<head>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script type="text/javascript" src="/lobby"></script>
 	<head>
 	<body>
 		<script type="text/javascript">
 			var init = function ()
 			{
-				if(lobby)
-					console.log(lobby);
+				$.getScript('lobby');
 			};
-			
 			$(init);
 		</script>
 	</body>
