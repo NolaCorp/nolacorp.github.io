@@ -6,7 +6,13 @@
 	<head>
 	<body>
 		<script type="text/javascript">
-			$(if (typeof lobby !== 'undefined') { console.log(lobby)) });
+			var init = function ()
+			{
+				if(lobby)
+					console.log(lobby);
+			};
+			
+			$(init);
 		</script>
 	</body>
 </html>
