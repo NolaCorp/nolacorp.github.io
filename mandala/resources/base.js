@@ -17,6 +17,8 @@ m.andala =
   {
     init: function ()
     {
+      // This is your data binder...
+      // m.andala.functions.add (this.add) creates data objects based on the model above and inflates. 
     },
     add: function ( encryption, ip, key, name )
     {
@@ -25,5 +27,7 @@ m.andala =
   },
   data: [];
 }
+
+m.andala.functions.init();
 
 return m;
